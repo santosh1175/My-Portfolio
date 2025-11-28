@@ -48,18 +48,5 @@ Projects – My recent and best work
 Contact – Form + social links
 
 
-
-🔮 Future Enhancements
-
-Dark mode
-
-More animations (GSAP/Framer-motion)
-
-Blog section
-
-Downloadable resume section
-
-Backend contact form with Node.js
-Frontend	HTML, CSS, JavaScript / ReactJS (add/remove based on what you used)
-CSS Framework	Custom CSS / Tailwind / Bootstrap (add the one you used)
+one you used)
 Email Service	EmailJS (if used)
