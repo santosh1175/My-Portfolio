@@ -1,0 +1,102 @@
+/* Intro Section */
+.intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 60px;
+  min-height: 80vh; 
+  background: #111;
+  color: #fff;
+}
+
+.intro-left h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 10px;
+  color: #ff7b00;
+}
+
+.intro-left h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.intro-left h1 span {
+  color: #ff7b00; /* San name highlight */
+}
+
+.intro-left h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: #eee;
+}
+
+.intro-left p {
+  font-size: 1rem;
+  line-height: 1.6;
+  max-width: 500px;
+  margin-bottom: 30px;
+  color: #ccc;
+}
+
+/* Buttons */
+.intro-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.btn {
+  padding: 10px 25px;
+  font-weight: 600;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.primary-btn {
+  background: linear-gradient(90deg, #ff7b00, #e52e71);
+  color: #fff;
+}
+
+.primary-btn:hover {
+  transform: scale(1.05);
+}
+
+.secondary-btn {
+  border: 2px solid #ff7b00;
+  color: #ff7b00;
+  background: transparent;
+}
+
+.secondary-btn:hover {
+  background: #ff7b00;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+/* Right image */
+.intro-right img {
+  max-width: 400px;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+
+.intro-right img:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .intro {
+    flex-direction: column;
+    text-align: center;
+    padding: 80px 30px;
+  }
+
+  .intro-right {
+    margin-top: 40px;
+  }
+}

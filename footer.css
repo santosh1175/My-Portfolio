@@ -1,0 +1,22 @@
+.footer {
+    width: 100%;
+    height: 4rem;
+    background: #111; /* dark background to match theme */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 300;
+    font-size: 0.9rem;
+    color: #bbb;
+    letter-spacing: 0.5px;
+    transition: color 0.3s ease;
+}
+
+.footer:hover {
+    color: #ff7b00; /* subtle orange on hover */
+}
+
+.footer-name {
+    font-weight: 500;
+    color: #fff;
+}

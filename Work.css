@@ -1,0 +1,164 @@
+.work {
+    padding: 60px 20px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    background-color: #0f0f0f;
+}
+
+.workTitle {
+    font-size: 2.6rem;
+    font-weight: 700;
+    background: linear-gradient(90deg, #ff8a00, #e52e71);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 15px;
+}
+
+.workDesc {
+    display: block;
+    font-size: 1rem;
+    color: #ccc;
+    max-width: 650px;
+    margin: 0 auto 50px;
+    line-height: 1.6;
+}
+
+.workImgs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    justify-items: center;
+    padding: 0 10px;
+}
+
+/* Work images */
+.workImg {
+    width: 100%;
+    max-width: 350px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(255, 123, 0, 0.2);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    cursor: pointer;
+}
+
+/* Only zoom for images without "noZoom" class */
+.workImg:not(.noZoom):hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 30px rgba(255, 123, 0, 0.7);
+}
+
+/* Work button */
+.workBtn {
+    margin-top: 4px; /* reduced space for compact design */
+    padding: 6px 14px;
+    background: transparent;
+    color: #ff7b00;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border: 2px solid #ff7b00;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.workBtn:hover {
+    background: #ff7b00;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .workImgs {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 700px) {
+    .workImgs {
+        grid-template-columns: 1fr;
+    }
+    .workDesc {
+        max-width: 90%;
+    }
+}
+
+/* this is my project section */
+.project{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 25px 30px;
+    width: 100%;
+    max-width: 800px;
+    gap: 25px;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+.project:hover{
+    transform: translateY(-5px);
+    box-shadow: rgba(255, 138, 0, 0.2);
+    border-color: rgba(255, 138, 0, 0.5);
+}
+
+
+.projectName{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.projectName h2{
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    background: linear-gradient(90deg, #ff8a00, #e52e71);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.projectName p{
+    font-size: 15px;
+    color: #bbb;
+    line-height: 1.6;
+    max-width: 600px;
+}
+
+.projectBtn {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 8px 16px;
+    background: #ff7b00;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    width: fit-content;
+    align-self: center;
+}
+
+.projectBtn:hover {
+    background: #d40a14;
+    transform: scale(1.05);
+}
+
+.projectTools {
+    margin-top: 8px;
+    font-size: 0.85rem;
+    color: #f80c0c;   
+    font-weight: 600; 
+}
+
+.toolsLabel {
+    font-weight: 700;  
+    margin-right: 5px; 
+    color: #f80c0c;
+}
+
